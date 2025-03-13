@@ -1,0 +1,55 @@
+.shoppingPage {
+    text-align: center;
+    padding: 20px;
+}
+
+.shoppingPage img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Button container */
+.shoppingbtn {
+    margin-top: 20px;
+}
+
+/* General button styles */
+.shoppingbtn button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    width: 180px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Add to Cart button */
+.add-btn {
+    background-color: green;
+}
+
+.add-btn:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+/* Remove from Cart button */
+.remove-btn {
+    background-color: red;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+/* Disabled button */
+.remove-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    transform: none;
+}

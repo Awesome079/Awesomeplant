@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+}
+
+.Homeplant{
+    display: flex;
+    gap: 40px;
+    color:white;
+    /* width: 100%; */
+    /* padding-top: 30px; */
+}
+
+.homeplantleft{
+    /* width: 50%; */
+    margin-left: 20px;
+    margin-top: 90px;
+    
+}
+
+.homeplantright{
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+.homeplantleft button{
+    color: white;
+    background-color: green;
+    width: 150px;
+    height: 5vh;
+    border-radius: 6px;
+
+}
+
+.homeplantright p{
+    font-size: large;
+}
+
