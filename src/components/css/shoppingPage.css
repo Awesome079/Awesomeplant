@@ -3,9 +3,27 @@
     padding: 20px;
 }
 
+.shoppingPage h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .shoppingPage img {
     width: 50%;
     border-radius: 10px;
+    max-width: 500px;
+    height: auto;
+}
+
+.shoppingPage h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.shoppingPage p {
+    font-size: 1rem;
+    padding: 0 20px;
+    line-height: 1.5;
 }
 
 /* Button container */
@@ -52,4 +70,52 @@
     background-color: gray;
     cursor: not-allowed;
     transform: none;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .shoppingPage h1 {
+        font-size: 1.6rem;
+    }
+
+    .shoppingPage img {
+        width: 80%;
+    }
+
+    .shoppingPage h3 {
+        font-size: 1.3rem;
+    }
+
+    .shoppingPage p {
+        font-size: 0.95rem;
+    }
+
+    .shoppingbtn button {
+        width: 80%;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .shoppingPage h1 {
+        font-size: 1.4rem;
+    }
+
+    .shoppingPage img {
+        width: 90%;
+    }
+
+    .shoppingPage h3 {
+        font-size: 1.1rem;
+    }
+
+    .shoppingPage p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .shoppingbtn button {
+        width: 90%;
+        font-size: 0.9rem;
+    }
 }

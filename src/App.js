@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, useLocation, matchPath } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation,} from "react-router-dom";
 import Home from './components/Home';
 import ProductPage from './components/ProductPage';
 import Navbar from './components/Navbar';
@@ -9,17 +9,15 @@ import CartPage from "./components/CartPage";
 
 
 function App() {
-  // Helper component to conditionally render Navbar and Footer
+  
   function Layout() {
     const location = useLocation();
    
-    const hideNavbar = ['/Home'].includes(location.pathname);
+    const hideNavbar = ['/Home', '/CartPage'].includes(location.pathname);
     
     return (
       <>
         {!hideNavbar && <Navbar />}
-        {/* {!hideSidebar && <Sidebar />} */}
-        {/* {!hideHeader && <Header />} */}
         
           <Routes>
             <Route path="/Home" element={<Home />} />
@@ -28,7 +26,7 @@ function App() {
             <Route path="/CartPage" element={<CartPage />} />
           </Routes>
         
-        {/* {!hideFooter && <Footer />} */}
+
       </>
     );
   }
