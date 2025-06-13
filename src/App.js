@@ -20,13 +20,13 @@ function App() {
         {!hideNavbar && <Navbar />}
         
           <Routes>
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/ProductPage" element={<ProductPage />} />
             <Route path="/ShoppingPage" element={<ShoppingPage />} />
             <Route path="/CartPage" element={<CartPage />} />
           </Routes>
         
-        <Home/>
+      
 
       </>
     );
