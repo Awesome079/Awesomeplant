@@ -26,6 +26,7 @@ function App() {
             <Route path="/CartPage" element={<CartPage />} />
           </Routes>
         
+        <Home/>
 
       </>
     );
